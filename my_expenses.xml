@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expenses>
+	<expense date="10.10.2010" categoty="Образование" amount="900">
+		Купил книжку по языку программирования Ruby
+	</expense>
+
+	<expense date="11.10.2010" categoty="Образование" amount="900">
+		Купил книжку по языку программирования Python
+	</expense>
+
+	<expense date="10.10.2010" categoty="Развлечение" amount="1900">
+		Туристическая поездка в Китай
+	</expense>
+
+	<expense date="11.10.2010" categoty="Развлечение" amount="2900">
+		Туристическая поездка во Францию
+	</expense>
+
+	<expense date="01.01.2010" categoty="Развлечение" amount="100">
+		Встретил Новый год
+	</expense>
+
+	<expense date="10.01.2010" categoty="Развлечение" amount="200">
+		Встретил старый Новый год
+	</expense>
+
+</expenses>
