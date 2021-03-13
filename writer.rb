@@ -35,7 +35,17 @@ e_category = STDIN.gets.chomp
 current_path = File.dirname(__FILE__)
 file_name = current_path + "/my_expenses.xml"
 file = File.new(file_name, "r:UTF-8")
-doc = REXML::Document.new(file)
+
+# doc = REXML::Document.new(file)
+
+begin
+  doc = REXML::Document.new(file)
+rescue REXML::ParseException => e
+	puts "XML-файл имеет битую структуру"
+	abort e.message
+end
+
+
 file.close
 
 # Вытащим корневой тег массива (вернется коллекция, нам надо первый элемент)
